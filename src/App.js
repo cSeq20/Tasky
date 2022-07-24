@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import { TodoItem } from "./models/TodoItem";
 import TodoForm from "./components/TodoForm";
 import TodoListItem from "./components/TodoListItem";
+import './App.css';
 
 function App() {
   const [tasks, setTasks] = useState([]);

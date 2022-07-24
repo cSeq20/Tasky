@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Edu+SA+Beginner');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-color: #24292E;
+  color: white;
+}
+
+.todoapp-container {
+  text-align: center;
+  border: 1px #20282c;
+  width: 40%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #2C3139;
+  border-radius: 10px;
+  font-family: 'Edu SA Beginner'
+}
+
+.todoapp-container h1 {
+  font-family: 'Edu SA Beginner', cursive;
+}
+
+.text-button {
+  display:flex; 
+  flex-direction:row; 
+  justify-content:center;
 }
