@@ -42,17 +42,33 @@
 body {
   background-color: #24292E;
   color: white;
+  font-family: 'Edu SA Beginner'
 }
 
-.todoapp-container {
+.todo-app-container {
   text-align: center;
-  border: 1px #20282c;
+  border: 1px solid #20282c;
   width: 40%;
   margin: auto;
   margin-top: 10px;
+  padding-bottom: 10px;
   background-color: #2C3139;
   border-radius: 10px;
-  font-family: 'Edu SA Beginner'
+}
+
+.list-container {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  background-color: #2C3139;
+  border-radius: 10px;
+  border: 1px solid #20282c;
+  padding-bottom: 10px;  
+  margin-top: 10px;  
+}
+
+.list-container p {
+  font-size: 18px;
 }
 
 .todoapp-container h1 {
@@ -63,4 +79,9 @@ body {
   display:flex; 
   flex-direction:row; 
   justify-content:center;
+}
+
+.edit-item-view {
+  width: 100%;
+  text-align: center;
 }

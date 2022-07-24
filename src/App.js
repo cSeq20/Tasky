@@ -4,6 +4,7 @@ import { TodoItem } from "./models/TodoItem";
 import TodoForm from "./components/TodoForm";
 import TodoListItem from "./components/TodoListItem";
 import './App.css';
+import { List } from '@mui/material';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -40,16 +41,20 @@ function App() {
   }
   
   return (
-    <div className="todoapp-container stack-large">
-      <h1>Tasky</h1>
-      <TodoForm 
-        addTask={addTask}
-      />
-      <p>{headingText}</p>
-      <ul>
-        {taskList}
-      </ul>
-    </div>
+    <div>
+      <div className="todo-app-container stack-large">
+        <h1>Tasky</h1>
+        <TodoForm 
+          addTask={addTask}
+        />
+      </div>
+      <div className="list-container">
+        <p>{headingText}</p>
+        <List >
+          {taskList}
+        </List>
+      </div>
+    </div>    
   );
 }
 
